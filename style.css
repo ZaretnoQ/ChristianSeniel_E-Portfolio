@@ -1,3 +1,4 @@
+/* Sets up the default styling for the body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,6 +6,7 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Creates a header with a dark background and centered white text */
 header {
     background: #35424a;
     color: #ffffff;
@@ -12,6 +14,7 @@ header {
     text-align: center;
 }
 
+/* Styles the navigation bar */
 nav {
     margin: 20px 0;
 }
@@ -22,6 +25,7 @@ nav a {
     text-decoration: none;
 }
 
+/* Provides a layout for each section with padding, rounded corners, and a subtle shadow */
 section {
     padding: 20px;
     margin: 20px;
@@ -30,6 +34,7 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Styles the footer to match the header */
 footer {
     text-align: center;
     padding: 10px 0;
@@ -40,36 +45,39 @@ footer {
     width: 100%;
 }
 
+/* Arranges projects horizontally */
 .project {
     display: flex;
-    align-items: flex-start; /* Align items to the start */
+    align-items: flex-start;
     margin-bottom: 20px;
 }
 
+/* Ensures project images are sized appropriately and scale smoothly when hovered */
 .project-image {
     position: relative;
     margin-right: 20px;
-    overflow: visible; /* Allow the image to expand outside the container */
+    overflow: visible;
 }
 
 .hover-image {
-    width: 150px; /* Original size */
+    width: 150px;
     height: auto;
     cursor: pointer;
-    transition: transform 0.3s ease; /* Smooth transition for scaling */
+    transition: transform 0.3s ease;
 }
 
 .project-image:hover .hover-image {
-    transform: scale(1.2); /* Scale the image to 120% of its original size */
-    z-index: 1; /* Ensure the image is on top */
+    transform: scale(1.2);
+    z-index: 1;
 }
 
+/* Displays a pop-up description next to the image when hovered */
 .description-box {
     display: none;
     position: absolute;
-    top: -10px; /* Adjust this value to move the box higher */
-    left: 160px; /* Adjust based on image size */
-    width: 200px; /* Width of the description box */
+    top: -10px;
+    left: 160px;
+    width: 200px;
     background: #ffffff;
     border: 1px solid #ccc;
     padding: 10px;
@@ -78,10 +86,10 @@ footer {
 }
 
 .project-image:hover .description-box {
-    display: block; /* Show the description box on hover */
+    display: block;
 }
 
-/* Modal Styling */
+/* Styles the modal to cover the screen with a dark overlay and center the image */
 .modal {
     display: none;
     position: fixed;
@@ -107,6 +115,7 @@ footer {
     border-radius: 10px;
 }
 
+/* Adds padding and styling to the modal description */
 #modalDescription {
     margin-top: 20px;
     background: #fff;
@@ -117,16 +126,7 @@ footer {
     animation: slideIn 0.5s ease-out;
 }
 
-#modalTitle {
-    margin: 0;
-    font-size: 1.5em;
-}
-
-#modalText {
-    margin: 10px 0 0;
-    font-size: 1em;
-}
-
+/* Defines the animation for zooming in elements */
 @keyframes zoomIn {
     0% {
         transform: scale(0.8);
@@ -138,6 +138,7 @@ footer {
     }
 }
 
+/* Defines the animation for sliding elements into view */
 @keyframes slideIn {
     0% {
         transform: translateX(-100%);

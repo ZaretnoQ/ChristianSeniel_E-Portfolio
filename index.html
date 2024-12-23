@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christian Seniel - E-Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Christian Seniel - E-Portfolio</title> 
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
 <header>
-    <h1>Christian Seniel</h1>
-    <p>Computer Science</p>
+    <h1>Christian Seniel</h1> 
+    <p>Computer Science</p> 
     <nav>
+        <!-- Navigation menu linking to page sections -->
         <a href="#about">About Me</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
@@ -18,7 +19,7 @@
     </nav>
 </header>
 <section id="about">
-    <h2>About Me</h2>
+    <h2>About Me</h2> <!-- Section header -->
     <p>Hi, I'm Christian Seniel, a passionate and driven individual with a background in programming. My fascination with computers began early, sparked by my parents introducing me to video games. This curiosity quickly grew into a deep interest in understanding how computers and software work.</p>
     <p>Over the years, I’ve honed my skills in C++, Python, and the Qt framework, and I’m always eager to take on new challenges and expand my knowledge.</p>
     <p>I’m deeply passionate about both program development and game development. Creating programs that meet practical needs is not only enjoyable but also an intellectually stimulating process for me. I find great satisfaction in discovering multiple solutions to a problem and optimizing them for better performance.</p>
@@ -26,33 +27,49 @@
     <p>When I’m not working or learning, I enjoy playing games and reading novels. These hobbies provide a balance that keeps me energized and creative, fueling my passion for continuous improvement and innovation.</p>
 </section>
 
-
 <section id="projects">
-    <h2>Projects</h2>
+    <h2>Projects</h2> <!-- Section header -->
+    <!-- Project 1 -->
     <div class="project">
         <div class="project-image">
+            <!-- Displays an image with hover functionality along with the full description of the program -->
             <img src="images/ArenaLegends.png" alt="Arena Legends" class="hover-image" onclick="openModal('Arena Legends', 'This project is a dynamic battle royale game built in Roblox Studio, featuring an expansive and immersive map designed for competitive gameplay. Players compete in a last-player-standing format, utilizing a range of weapons, tools, and strategies. The game includes realistic environmental mechanics, such as shrinking safe zones and randomized loot spawns, enhancing replayability and challenge. Developed with Roblox scripting engine, it showcases proficiency in Lua programming, game design, and user interface development. The project highlights the integration of multiplayer systems, detailed map design, and engaging gameplay mechanics.', this.src)" />
             <div class="description-box">
-                <h3>Arena Legends</h3>
-                <p>A fantasy battle royale game developed in Roblox Studio.</p>
+                <h3>Arena Legends</h3> <!-- Project title -->
+                <p>A fantasy battle royale game developed in Roblox Studio.</p> <!-- Project description -->
             </div>
         </div>
     </div>
 
+    <!-- Project 2 -->
     <div class="project">
         <div class="project-image">
-            <img src="images/FloodMitigation.png" alt="Project Title 2" class="hover-image" onclick="openModal('Project Title 2', 'Our group created a Python project that models realistic terrains and water flow behavior by utilizing Perlin noise to generate detailed elevation maps with customizable scales and variability. A hybrid pathfinding algorithm, combining A* and Dijkstra methods, optimizes navigation across uneven terrains and varying elevations. The tool simulates rainfall to analyze flood-prone areas and adapts terrains for better water flow management. It incorporates roads and restricted zones, such as buildings, to enhance terrain realism. Rich visualizations showcase terrain maps, water paths, flood overlays, and key features, making the analysis intuitive and impactful', this.src)" />
+            <!-- Displays an image with hover functionality along with the full description of the program -->
+            <img src="images/FloodMitigation.png" alt="Project Title 2" class="hover-image" onclick="openModal('Flood Mitigation', 'Our group created a Python project that models realistic terrains and water flow behavior by utilizing Perlin noise to generate detailed elevation maps with customizable scales and variability. A hybrid pathfinding algorithm, combining A* and Dijkstra methods, optimizes navigation across uneven terrains and varying elevations. The tool simulates rainfall to analyze flood-prone areas and adapts terrains for better water flow management. It incorporates roads and restricted zones, such as buildings, to enhance terrain realism. Rich visualizations showcase terrain maps, water paths, flood overlays, and key features, making the analysis intuitive and impactful', this.src)" />
             <div class="description-box">
-                <h3>Flood Mitigation</h3>
-                <p>A Python project that aims to optimize drain paths to mitigate floods for USTP.</p>
+                <h3>Flood Mitigation</h3> <!-- Project title -->
+                <p>A Python project that aims to optimize drain paths to mitigate floods for USTP.</p> <!-- Project description -->
             </div>
         </div>
     </div>
-    
+
+    <!-- Project 3 -->
+    <div class="project">
+        <div class="project-image">
+            <!-- Displays an image with hover functionality along with the full description of the program -->
+            <img src="images/CompressorResults.png" alt="Project Title 2" class="hover-image" onclick="openModal('Text Compressor', 'This program implements a hybrid data compression system using advanced techniques Burrows-Wheeler Transform (BWT), Run-Length Encoding (RLE), and Huffman coding. It reads input data from a file, applies these algorithms to compress the data efficiently, and writes the compressed binary output along with metadata (compression ratio and speed) to a file. The program highlights practical use cases of string transformations, tree-based encoding, and binary file handling, making it a versatile tool for demonstrating data compression principles. The program used a medical records file that is 16mb in size with 490794 lines in the text file', this.src)" />
+            <div class="description-box">
+                <h3>Text Compressor</h3> <!-- Project title -->
+                <p>A text compressor that combines and implements multiple compressing techniques.</p> <!-- Project description -->
+            </div>
+        </div>
+    </div>
 </section>
+
 <section id="skills">
-    <h2>Skills</h2>
+    <h2>Skills</h2> <!-- Section header -->
     <ul>
+        <!-- List of skills -->
         <li>Coding in C++</li>
         <li>Coding in Python</li>
         <li>Proficient in Visual Studio IDE</li>
@@ -60,26 +77,25 @@
         <li>Proficient in English communication</li>
     </ul>
 </section>
+
 <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:your.email@example.com">christianseniel2@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="https://github.com/ZaretnoQ">ZaretnoQ</a></p>
+    <h2>Contact Me</h2> <!-- Section header -->
+    <p>Email: <a href="mailto:your.email@example.com">christianseniel2@gmail.com</a></p> <!-- Contact email -->
+    <p>GitHub: <a href="https://github.com/yourusername" target="https://github.com/ZaretnoQ">ZaretnoQ</a></p> <!-- GitHub profile -->
 </section>
-<footer>
-    <p>&copy; 2023 Your Name. All rights reserved.</p>
-</footer>
 
 <!-- Modal for Zoomed Image -->
 <div id="imageModal" class="modal" onclick="closeModal()">
     <div class="modal-content" onclick="event.stopPropagation()">
-        <img id="modalImage" src="" alt="Zoomed Image">
+        <img id="modalImage" src="" alt="Zoomed Image"> <!-- Modal image -->
         <div id="modalDescription">
-            <h3 id="modalTitle"></h3>
-            <p id="modalText"></p>
+            <h3 id="modalTitle"></h3> <!-- Modal title -->
+            <p id="modalText"></p> <!-- Modal description -->
         </div>
     </div>
 </div>
 <script>
+    // Opens the modal with provided title, description, and image
     function openModal(title, description, imageSrc) {
         document.getElementById('modalTitle').innerText = title;
         document.getElementById('modalText').innerText = description;
@@ -87,6 +103,7 @@
         document.getElementById('imageModal').style.display = 'flex';
     }
 
+    // Closes the modal
     function closeModal() {
         document.getElementById('imageModal').style.display = 'none';
     }
