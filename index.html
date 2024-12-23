@@ -87,23 +87,20 @@
 <!-- Modal for Zoomed Image -->
 <div id="imageModal" class="modal" onclick="closeModal()">
     <div class="modal-content" onclick="event.stopPropagation()">
-        <img id="modalImage" src="" alt="Zoomed Image"> <!-- Modal image -->
+        <img id="modalImage" src="" alt="Zoomed Image"> 
         <div id="modalDescription">
-            <h3 id="modalTitle"></h3> <!-- Modal title -->
-            <p id="modalText"></p> <!-- Modal description -->
+            <h3 id="modalTitle"></h3> 
+            <p id="modalText"></p> 
         </div>
     </div>
 </div>
 <script>
-    // Opens the modal with provided title, description, and image
     function openModal(title, description, imageSrc) {
         document.getElementById('modalTitle').innerText = title;
         document.getElementById('modalText').innerText = description;
         document.getElementById('modalImage').src = imageSrc;
         document.getElementById('imageModal').style.display = 'flex';
     }
-
-    // Closes the modal
     function closeModal() {
         document.getElementById('imageModal').style.display = 'none';
     }
